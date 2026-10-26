@@ -7,3 +7,6 @@ broker
 
 kafka consumer
 ![img_2.png](img_2.png)
+
+consumer from beginning 
+![img_3.png](img_3.png)
