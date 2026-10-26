@@ -23,3 +23,12 @@ handlers
 
 supplier
 ![img_7.png](img_7.png)
+
+kstream
+R3
+![img_8.png](img_8.png)
+R4
+![img_9.png](img_9.png)
+
+kafaka console consumer
+![img_10.png](img_10.png)
