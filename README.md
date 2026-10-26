@@ -2,11 +2,17 @@ docker compose up
 ![img.png](img.png)
 
 broker
+docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic R2
 ![img_1.png](img_1.png)
 
 
 kafka consumer
+docker exec --interactive --tty broker kafka-console-producer --bootstrap-server broker:9092 --topic R2
 ![img_2.png](img_2.png)
 
-consumer from beginning 
+consumer from beginning
+docker exec --interactive --tty broker kafka-console-producer --bootstrap-server broker:9092 --topic R2 --from-beginning
 ![img_3.png](img_3.png)
+
+controller 
+![img_4.png](img_4.png)
