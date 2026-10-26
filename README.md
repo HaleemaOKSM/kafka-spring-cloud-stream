@@ -38,3 +38,6 @@ groupbykey
 
 windowedBy
 ![img_12.png](img_12.png)
+
+analytics
+![img_13.png](img_13.png)
