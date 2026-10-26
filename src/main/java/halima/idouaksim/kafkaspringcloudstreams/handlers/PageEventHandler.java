@@ -45,7 +45,12 @@ public class PageEventHandler {
         return (stream)->
                 stream
                         .filter((k,v)->v.duration()>100)
-                        .map((k,v)->new KeyValue<>(v.name(), v.duration()));
+                        .map((k,v)->new KeyValue<>(v.name(), v.duration()))
+                        .groupByKey(Grouped.with(Serdes.String(), Serdes.Long()))
+                        .windowedBy(TimeWindows.ofSizeWithNoGrace(Duration.ofSeconds(5000)))
+                        .count()
+                        .toStream()
+                        .map((k,v)->new KeyValue<>(k.key(),v));
 
     }
 }

@@ -32,3 +32,9 @@ R4
 
 kafaka console consumer
 ![img_10.png](img_10.png)
+
+groupbykey
+![img_11.png](img_11.png)
+
+windowedBy
+![img_12.png](img_12.png)
